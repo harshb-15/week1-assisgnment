@@ -96,8 +96,3 @@ def copy_inventory(inventory, deep=True):
     if(deep):
         return deepcopy(inventory)
     return copy(inventory)
-
-inven = create_inventory()
-update_info = {'price': 1200, 'quantity': 7}
-update_inventory(inven, 'Electronics', 'Laptop', update_info)
-print(inven)
