@@ -10,7 +10,7 @@ def create_inventory():
     """
     categories = ["Electronics", "Groceries"]
     electronics_items = [{'name': 'Laptop', 'price': 1100, 'quantity': 5}, {'name': 'Tablet', 'price': 500, 'quantity': 15}]
-    inventory = {k: {} for k in categories} 
+    inventory = {k: dict() for k in categories} 
     for item in electronics_items:
         inventory["Electronics"][item['name']] = item
     return inventory
